@@ -16,9 +16,6 @@ public class telaLogin extends javax.swing.JFrame {
      */
     public telaLogin() {
         initComponents();
-
-        setDefaultCloseOperation(telaLogin.DISPOSE_ON_CLOSE);
-
     }
 
     /**
@@ -32,18 +29,18 @@ public class telaLogin extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        jlPagamento = new javax.swing.JLabel();
+        jlIngressos = new javax.swing.JLabel();
+        jlSair = new javax.swing.JLabel();
+        jlCartaz = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jlEmailCliente = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        jlCPFCliente = new javax.swing.JLabel();
+        jlTelefoneCliente = new javax.swing.JLabel();
+        jlNomeCliente = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,21 +55,21 @@ public class telaLogin extends javax.swing.JFrame {
         jLabel2.setToolTipText("");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 240, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bills.png"))); // NOI18N
-        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, -1, -1));
+        jlPagamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bills.png"))); // NOI18N
+        jlPagamento.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.add(jlPagamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 70, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/shopping-bag.png"))); // NOI18N
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, -1, -1));
+        jlIngressos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/shopping-bag.png"))); // NOI18N
+        jlIngressos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.add(jlIngressos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cancel.png"))); // NOI18N
-        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, -1, -1));
+        jlSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cancel.png"))); // NOI18N
+        jlSair.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.add(jlSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/video-camera (2).png"))); // NOI18N
-        jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, -1, -1));
+        jlCartaz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/video-camera (2).png"))); // NOI18N
+        jlCartaz.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.add(jlCartaz, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -88,34 +85,34 @@ public class telaLogin extends javax.swing.JFrame {
         jLabel13.setText("Em Cartaz");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("E-Mail do Usuário");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 240, -1));
+        jlEmailCliente.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jlEmailCliente.setForeground(new java.awt.Color(255, 255, 255));
+        jlEmailCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlEmailCliente.setText("E-Mail do Usuário");
+        jPanel1.add(jlEmailCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 240, -1));
 
         jLabel14.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setText("Ingressos");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 140, 110, -1));
 
-        jLabel9.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("CPF do Usuário");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 240, -1));
+        jlCPFCliente.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jlCPFCliente.setForeground(new java.awt.Color(255, 255, 255));
+        jlCPFCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlCPFCliente.setText("CPF do Usuário");
+        jPanel1.add(jlCPFCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 240, -1));
 
-        jLabel10.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Telefone do Usuário");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 240, -1));
+        jlTelefoneCliente.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jlTelefoneCliente.setForeground(new java.awt.Color(255, 255, 255));
+        jlTelefoneCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlTelefoneCliente.setText("Telefone do Usuário");
+        jPanel1.add(jlTelefoneCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 240, -1));
 
-        jLabel15.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setText("Nome Completo");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 240, -1));
+        jlNomeCliente.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jlNomeCliente.setForeground(new java.awt.Color(255, 255, 255));
+        jlNomeCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlNomeCliente.setText("Nome Completo");
+        jPanel1.add(jlNomeCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 240, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/telainicial.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -171,19 +168,19 @@ public class telaLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jlCPFCliente;
+    private javax.swing.JLabel jlCartaz;
+    private javax.swing.JLabel jlEmailCliente;
+    private javax.swing.JLabel jlIngressos;
+    private javax.swing.JLabel jlNomeCliente;
+    private javax.swing.JLabel jlPagamento;
+    private javax.swing.JLabel jlSair;
+    private javax.swing.JLabel jlTelefoneCliente;
     // End of variables declaration//GEN-END:variables
 }

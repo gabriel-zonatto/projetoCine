@@ -19,12 +19,9 @@ public class tela extends javax.swing.JFrame {
     public tela() {
         initComponents();
         
-        jTextField2.setBackground(new Color (0,0,0,50));
-        jPasswordField1.setBackground(new Color (0,0,0,50));
-        jLabel3.setBackground(new Color (0,0,0,50));
-
-        setDefaultCloseOperation(tela.DISPOSE_ON_CLOSE);
-
+        jtfEmailLogin.setBackground(new Color (0,0,0,50));
+        jpSenhaLogin.setBackground(new Color (0,0,0,50));
+        jlEntrarLogin.setBackground(new Color (0,0,0,50));
     }
 
     /**
@@ -38,12 +35,12 @@ public class tela extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        jtfEmailLogin = new javax.swing.JTextField();
+        jpSenhaLogin = new javax.swing.JPasswordField();
+        jlEntrarLogin = new javax.swing.JLabel();
+        jlCadastrarMenu = new javax.swing.JLabel();
+        jlPagamentoMenu = new javax.swing.JLabel();
+        jlCartazMenu = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -60,59 +57,52 @@ public class tela extends javax.swing.JFrame {
         jLabel2.setText("Login");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
 
-        jTextField2.setBackground(new java.awt.Color(0, 0, 0));
-        jTextField2.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setText("Insira seu e-mail");
-        jTextField2.setToolTipText("");
-        jTextField2.setBorder(null);
-        jTextField2.setName(""); // NOI18N
-        jTextField2.setOpaque(false);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jtfEmailLogin.setBackground(new java.awt.Color(0, 0, 0));
+        jtfEmailLogin.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jtfEmailLogin.setForeground(new java.awt.Color(255, 255, 255));
+        jtfEmailLogin.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jtfEmailLogin.setText("Insira seu e-mail");
+        jtfEmailLogin.setToolTipText("");
+        jtfEmailLogin.setBorder(null);
+        jtfEmailLogin.setName(""); // NOI18N
+        jtfEmailLogin.setOpaque(false);
+        jtfEmailLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jtfEmailLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 190, 40));
+        jPanel1.add(jtfEmailLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 190, 40));
 
-        jPasswordField1.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jPasswordField1.setForeground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPasswordField1.setText("Digite sua senha");
-        jPasswordField1.setToolTipText("Digite sua senha");
-        jPasswordField1.setBorder(null);
-        jPasswordField1.setPreferredSize(new java.awt.Dimension(129, 22));
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 190, 40));
+        jpSenhaLogin.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jpSenhaLogin.setForeground(new java.awt.Color(255, 255, 255));
+        jpSenhaLogin.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jpSenhaLogin.setText("Digite sua senha");
+        jpSenhaLogin.setToolTipText("Digite sua senha");
+        jpSenhaLogin.setBorder(null);
+        jpSenhaLogin.setPreferredSize(new java.awt.Dimension(129, 22));
+        jPanel1.add(jpSenhaLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 190, 40));
 
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Entrar");
-        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel3.setOpaque(true);
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 90, 40));
+        jlEntrarLogin.setBackground(new java.awt.Color(0, 0, 0));
+        jlEntrarLogin.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
+        jlEntrarLogin.setForeground(new java.awt.Color(255, 255, 255));
+        jlEntrarLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlEntrarLogin.setText("Entrar");
+        jlEntrarLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jlEntrarLogin.setOpaque(true);
+        jPanel1.add(jlEntrarLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 90, 40));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/key (2).png"))); // NOI18N
-        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jlCadastrarMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/key (2).png"))); // NOI18N
+        jlCadastrarMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.add(jlCadastrarMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
 
-        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel7MouseClicked(evt);
-            }
-        });
+        jlPagamentoMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/shopping-cart (2).png"))); // NOI18N
+        jlPagamentoMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel1.add(jlPagamentoMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, -1, -1));
 
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/shopping-cart (2).png"))); // NOI18N
-        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/video-camera (2).png"))); // NOI18N
-        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel9.setDoubleBuffered(true);
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
+        jlCartazMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/video-camera (2).png"))); // NOI18N
+        jlCartazMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jlCartazMenu.setDoubleBuffered(true);
+        jPanel1.add(jlCartazMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 70, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Cambria", 1, 18)); // NOI18N
         jLabel4.setText("Em Cartaz");
@@ -143,16 +133,9 @@ public class tela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jtfEmailLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfEmailLoginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
-
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        telaCadastro frame = new telaCadastro();
-        frame.setVisible(true);
-    }//GEN-LAST:event_jLabel7MouseClicked
-
+    }//GEN-LAST:event_jtfEmailLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -197,13 +180,13 @@ public class tela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel jlCadastrarMenu;
+    private javax.swing.JLabel jlCartazMenu;
+    private javax.swing.JLabel jlEntrarLogin;
+    private javax.swing.JLabel jlPagamentoMenu;
+    private javax.swing.JPasswordField jpSenhaLogin;
+    private javax.swing.JTextField jtfEmailLogin;
     // End of variables declaration//GEN-END:variables
 }

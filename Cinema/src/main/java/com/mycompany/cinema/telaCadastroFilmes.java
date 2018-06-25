@@ -27,7 +27,9 @@ public class telaCadastroFilmes extends javax.swing.JFrame {
         jTextField6.setBackground(new Color(0,0,0,50));
         jTextField7.setBackground(new Color(0,0,0,50));
         jTextArea1.setBackground(new Color(0,0,0,50));
+
         setDefaultCloseOperation(telaCadastroFilmes.DISPOSE_ON_CLOSE);
+
                 }
 
     /**
