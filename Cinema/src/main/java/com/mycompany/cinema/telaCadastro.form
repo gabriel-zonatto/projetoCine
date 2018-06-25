@@ -357,6 +357,14 @@
             </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField7ActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jTextField7.setText(&quot;Digite seu CPF&quot;);&#xa;jTextField7.getText();&#xa;jTextField7=Mascara(11,&quot;1,2,3,4,5,6,7,8,9&quot;);"/>
+          </AuxValues>
+
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="160" y="120" width="180" height="40"/>

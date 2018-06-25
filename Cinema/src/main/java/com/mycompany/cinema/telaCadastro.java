@@ -8,6 +8,10 @@ package com.mycompany.cinema;
 import java.awt.Color;
 import java.awt.event.ItemEvent;
 
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+
 /**
  *
  * @author Gabriel
@@ -36,7 +40,31 @@ public class telaCadastro extends javax.swing.JFrame {
         
         buttonGroup2.add(jRadioButton1);
         buttonGroup2.add(jRadioButton2);
+
+        setDefaultCloseOperation(telaCadastro.DISPOSE_ON_CLOSE);
     }
+    
+    
+    
+    public JTextField Mascara(int tamanho, String caracteres){
+        try {
+            String quant="";
+            for (int i = 0; i < tamanho; i++) {
+                quant=quant+"*";
+            }
+            javax.swing.text.MaskFormatter cpf=new javax.swing.text.MaskFormatter("###.###.###-##");
+            cpf.setValidCharacters(caracteres);
+            return new javax.swing.JFormattedTextField(cpf);
+        } catch (Exception e) {
+        
+            JOptionPane.showMessageDialog(null, "Ocorreu um erro!");          
+        }
+          return new JTextField();
+    };
+    
+
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -183,6 +211,11 @@ public class telaCadastro extends javax.swing.JFrame {
         jPasswordField2.setBorder(null);
         jPanel1.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 180, 40));
 
+
+        jTextField7.setText("Digite seu CPF");
+        jTextField7.getText();
+        jTextField7=Mascara(11,"1,2,3,4,5,6,7,8,9");
+
         jTextField7.setBackground(new java.awt.Color(0, 0, 0));
         jTextField7.setFont(new java.awt.Font("Cambria", 0, 18)); // NOI18N
         jTextField7.setForeground(new java.awt.Color(255, 255, 255));
@@ -190,6 +223,13 @@ public class telaCadastro extends javax.swing.JFrame {
         jTextField7.setText("Digite seu CPF");
         jTextField7.setBorder(null);
         jTextField7.setOpaque(false);
+
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
+
         jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 180, 40));
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
@@ -230,6 +270,13 @@ public class telaCadastro extends javax.swing.JFrame {
              jTextField1.setVisible(false);
          }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+       jTextField7.setText("Digite seu CPF");
+       jTextField7.getText();
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
 
     /**
      * @param args the command line arguments

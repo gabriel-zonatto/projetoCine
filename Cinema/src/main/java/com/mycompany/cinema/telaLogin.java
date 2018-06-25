@@ -16,6 +16,9 @@ public class telaLogin extends javax.swing.JFrame {
      */
     public telaLogin() {
         initComponents();
+
+        setDefaultCloseOperation(telaLogin.DISPOSE_ON_CLOSE);
+
     }
 
     /**

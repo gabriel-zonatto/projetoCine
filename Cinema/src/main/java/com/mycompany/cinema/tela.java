@@ -22,6 +22,9 @@ public class tela extends javax.swing.JFrame {
         jTextField2.setBackground(new Color (0,0,0,50));
         jPasswordField1.setBackground(new Color (0,0,0,50));
         jLabel3.setBackground(new Color (0,0,0,50));
+
+        setDefaultCloseOperation(tela.DISPOSE_ON_CLOSE);
+
     }
 
     /**
@@ -93,6 +96,13 @@ public class tela extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/key (2).png"))); // NOI18N
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
+
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/shopping-cart (2).png"))); // NOI18N
@@ -136,6 +146,13 @@ public class tela extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        telaCadastro frame = new telaCadastro();
+        frame.setVisible(true);
+    }//GEN-LAST:event_jLabel7MouseClicked
+
 
     /**
      * @param args the command line arguments

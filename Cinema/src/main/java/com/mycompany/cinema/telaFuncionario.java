@@ -16,6 +16,9 @@ public class telaFuncionario extends javax.swing.JFrame {
      */
     public telaFuncionario() {
         initComponents();
+
+        setDefaultCloseOperation(telaFuncionario.DISPOSE_ON_CLOSE);
+
     }
 
     /**
